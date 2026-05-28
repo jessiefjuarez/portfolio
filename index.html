@@ -1,715 +1,294 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-wf-domain="jessiejuarez.com" data-wf-page="69d8520fc980b911109c8d11" data-wf-site="69d85207c980b911109c8bdf" lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Jessie Juarez — Director of Photography & Editor, Los Angeles</title>
-<meta name="description" content="Bilingual (EN/ES) DP and editor based in Los Angeles. Commercial, broadcast, and live for Kodak, Tito's, EVC, and Super Bowl LX Spanish radio broadcast.">
-<meta property="og:title" content="Jessie Juarez — DP & Editor, LA">
-<meta property="og:description" content="Bilingual cinematographer and editor. Six-figure broadcast campaigns across 21+ markets.">
-<meta property="og:image" content="assets/reel-poster.jpg">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="preconnect" href="https://api.fontshare.com">
-<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
-<link rel="preconnect" href="https://player.vimeo.com">
-<link href="https://api.fontshare.com/v2/css?f[]=boska@300,400,500,600,700,300i,400i,500i,600i,700i&f[]=switzer@300,400,500,600,700&display=swap" rel="stylesheet">
+<meta charset="utf-8"/>
+<link href="https://cdn.prod.website-files.com" rel="preconnect" crossorigin="anonymous"/>
+<title>Jessie Juarez — Director of Photography &amp; Editor, Los Angeles</title>
+<meta content="Bilingual (EN/ES) DP and editor based in Los Angeles. Commercial, broadcast, and live for Kodak, Tito's, EVC, and Super Bowl LX Spanish radio broadcast." name="description"/>
+<meta content="Jessie Juarez — DP &amp; Editor, LA" property="og:title"/>
+<meta content="Bilingual cinematographer and editor. Six-figure broadcast campaigns across 21+ markets." property="og:description"/>
+<meta content="https://cdn.prod.website-files.com/6902379f243666cbf1c31b74/692a0ee9b88d9c4317610e04_Ophen%20Graph_1x.webp" property="og:image"/>
+<meta content="Jessie Juarez — DP &amp; Editor, LA" property="twitter:title"/>
+<meta content="Bilingual cinematographer and editor. Six-figure broadcast campaigns across 21+ markets." property="twitter:description"/>
+<meta content="https://cdn.prod.website-files.com/6902379f243666cbf1c31b74/692a0ee9b88d9c4317610e04_Ophen%20Graph_1x.webp" property="twitter:image"/>
+<meta property="og:type" content="website"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/css/jessies-amazing-site-0060df.webflow.shared.77eabd703.css" rel="stylesheet" type="text/css" crossorigin="anonymous"/>
 <style>
-  :root{
-    /* ---- Color (OKLCH, neutrals tinted toward warm amber) ---- */
-    --bg:           oklch(0.10 0.008 40);
-    --bg-2:         oklch(0.12 0.010 40);
-    --shell:        oklch(0.16 0.012 42);
-    --shell-2:      oklch(0.19 0.014 44);
-    --surface:      oklch(0.14 0.010 40);
-    --ink:          oklch(0.96 0.012 75);
-    --ink-soft:     oklch(0.88 0.015 70);
-    --muted:        oklch(0.62 0.012 55);
-    --hairline:     oklch(0.24 0.010 42);
-    --hairline-hi:  oklch(0.32 0.012 44);
-    --accent:       oklch(0.92 0.012 75);   /* editorial cream — italic emphasis */
-    --gold:         oklch(0.84 0.140 65);   /* reserved: project-name italics only */
-
-    /* ---- Type ---- */
-    --display: 'Boska', 'Times New Roman', serif;
-    --sans: 'Switzer', -apple-system, BlinkMacSystemFont, sans-serif;
-
-    /* Modular scale w/ fluid clamps */
-    --t-2xs: clamp(10px, 0.7vw, 11px);
-    --t-xs:  clamp(11px, 0.8vw, 12px);
-    --t-sm:  clamp(13px, 0.95vw, 14px);
-    --t-base:clamp(15px, 1.1vw, 17px);
-    --t-lg:  clamp(19px, 1.5vw, 24px);
-    --t-xl:  clamp(26px, 2.4vw, 36px);
-    --t-2xl: clamp(38px, 4.4vw, 64px);
-    --t-3xl: clamp(56px, 7vw, 108px);
-    --t-4xl: clamp(56px, 7.4vw, 124px);
-
-    /* ---- Spacing (4pt scale w/ semantic names) ---- */
-    --s-2xs: 4px;
-    --s-xs:  8px;
-    --s-sm:  12px;
-    --s-md:  16px;
-    --s-lg:  24px;
-    --s-xl:  32px;
-    --s-2xl: 48px;
-    --s-3xl: 64px;
-    --s-4xl: 96px;
-    --s-5xl: clamp(96px, 12vw, 192px);
-
-    /* ---- Motion ---- */
-    --ease-out-quint: cubic-bezier(0.16, 1, 0.3, 1);
-    --ease-settle:    cubic-bezier(0.32, 0.72, 0, 1);
-    --ease-stage:     cubic-bezier(0.22, 1, 0.36, 1);
-    --t-fast:   320ms;
-    --t-mid:    560ms;
-    --t-slow:   900ms;
-
-    /* ---- Layout ---- */
-    --maxw: 1720px;
-    --gutter: clamp(18px, 3.4vw, 56px);
-  }
-
-  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-  html,body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:400;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
-  body{overflow-x:hidden;line-height:1.5;font-size:var(--t-base)}
-  ::selection{background:var(--accent);color:var(--bg)}
-  a{color:inherit;text-decoration:none}
-  img,video,svg{display:block;max-width:100%}
-  button{font:inherit;background:none;border:none;color:inherit;cursor:pointer}
-
-  /* ---- Fixed grain overlay (perf-safe) ---- */
-  .grain{position:fixed;inset:0;z-index:60;pointer-events:none;opacity:.04;mix-blend-mode:overlay;background-image:url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.6 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>")}
-
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--gutter)}
-
-  /* ─────────────── EYEBROW PILL ─────────────── */
-  .eyebrow{display:inline-flex;align-items:center;gap:var(--s-xs);padding:6px 12px;border:1px solid var(--hairline);border-radius:999px;font-family:var(--sans);font-size:var(--t-2xs);letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft);font-weight:500;background:color-mix(in oklab, var(--shell) 60%, transparent)}
-  .eyebrow .pip{width:6px;height:6px;background:var(--accent);border-radius:50%}
-
-  /* ─────────────── FLUID ISLAND NAV ─────────────── */
-  .nav-island{position:fixed;top:var(--s-lg);left:0;right:0;z-index:50;display:flex;justify-content:center;pointer-events:none}
-  .nav-pill{pointer-events:auto;display:inline-flex;align-items:center;gap:var(--s-lg);padding:8px 8px 8px 22px;border-radius:999px;background:color-mix(in oklab, var(--shell) 75%, transparent);border:1px solid var(--hairline);box-shadow:inset 0 1px 0 oklch(1 0 0 / .04), 0 30px 60px -30px oklch(0 0 0 / .6);backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);font-size:var(--t-xs);letter-spacing:.14em;text-transform:uppercase}
-  .nav-brand{font-family:var(--display);font-style:italic;font-weight:500;font-size:var(--t-sm);letter-spacing:-.01em;text-transform:none;color:var(--ink)}
-  .nav-brand b{font-style:normal;font-weight:500}
-  .nav-links{display:flex;gap:var(--s-lg);color:var(--ink-soft)}
-  .nav-links a{transition:color var(--t-fast) var(--ease-out-quint)}
-  .nav-links a:hover{color:var(--ink)}
-  .nav-status{display:inline-flex;align-items:center;gap:var(--s-xs);padding:8px 14px;border-radius:999px;background:var(--bg-2);border:1px solid var(--hairline);color:var(--ink-soft)}
-  .pulse{width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 0 var(--accent);animation:pulse 2.4s var(--ease-settle) infinite}
-  @keyframes pulse{
-    0%{box-shadow:0 0 0 0 oklch(0.92 0.012 75 / .45)}
-    70%{box-shadow:0 0 0 10px oklch(0.92 0.012 75 / 0)}
-    100%{box-shadow:0 0 0 0 oklch(0.92 0.012 75 / 0)}
-  }
-  @media(max-width:780px){
-    .nav-links{display:none}
-    .nav-pill{gap:var(--s-md);padding:6px 6px 6px 16px}
-  }
-
-  /* ─────────────── BUTTON (Button-in-Button) ─────────────── */
-  .btn{position:relative;display:inline-flex;align-items:center;gap:var(--s-md);padding:10px 10px 10px 24px;border-radius:999px;background:var(--ink);color:var(--bg);font-size:var(--t-xs);letter-spacing:.18em;text-transform:uppercase;font-weight:500;border:1px solid color-mix(in oklab, var(--ink) 100%, transparent);transition:transform var(--t-fast) var(--ease-out-quint), background var(--t-fast) var(--ease-out-quint), color var(--t-fast) var(--ease-out-quint);will-change:transform}
-  .btn .ico{width:34px;height:34px;border-radius:50%;background:var(--bg);color:var(--ink);display:inline-flex;align-items:center;justify-content:center;transition:transform var(--t-fast) var(--ease-out-quint), background var(--t-fast) var(--ease-out-quint)}
-  .btn .ico svg{width:14px;height:14px}
-  .btn:hover{background:var(--accent);color:var(--bg)}
-  .btn:hover .ico{transform:translate(3px,-2px) scale(1.06);background:var(--bg);color:var(--accent)}
-  .btn:active{transform:scale(.98)}
-
-  .btn-ghost{background:transparent;color:var(--ink);border:1px solid var(--hairline-hi)}
-  .btn-ghost .ico{background:var(--shell);color:var(--ink)}
-  .btn-ghost:hover{background:var(--shell);color:var(--ink);border-color:var(--ink-soft)}
-  .btn-ghost:hover .ico{background:var(--ink);color:var(--bg)}
-
-  /* ─────────────── DOUBLE-BEZEL ─────────────── */
-  .bezel{position:relative;padding:8px;background:var(--shell);border:1px solid var(--hairline);border-radius:34px;box-shadow:inset 0 1px 0 oklch(1 0 0 / .04), 0 1px 2px oklch(0 0 0 / .5);overflow:hidden}
-  .bezel-inner{position:relative;border-radius:calc(34px - 9px);overflow:hidden;background:var(--surface);box-shadow:inset 0 1px 0 oklch(1 0 0 / .03)}
-  .bezel-sm{padding:6px;border-radius:24px}
-  .bezel-sm .bezel-inner{border-radius:calc(24px - 7px)}
-  .bezel-lg{padding:12px;border-radius:44px}
-  .bezel-lg .bezel-inner{border-radius:calc(44px - 13px)}
-
-  /* ─────────────── HERO ─────────────── */
-  .hero{position:relative;min-height:100dvh;padding:calc(var(--s-3xl) + 60px) var(--gutter) var(--s-4xl);display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;background:var(--bg)}
-  .hero-bg{position:absolute;inset:0;z-index:0;overflow:hidden}
-  .hero-bg::after{content:"";position:absolute;inset:0;background:radial-gradient(120% 90% at 80% 10%, oklch(0.18 0.02 50 / .6) 0%, transparent 55%), linear-gradient(180deg, oklch(0.10 0.008 40 / .6) 0%, oklch(0.08 0.008 40 / .35) 35%, oklch(0.08 0.008 40 / .85) 100%);pointer-events:none}
-  .hero-bg video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.85) contrast(1.05) brightness(.7)}
-  .hero-inner{position:relative;z-index:2;max-width:var(--maxw);width:100%;margin:0 auto;display:grid;grid-template-columns:1fr;gap:var(--s-2xl)}
-
-  .hero-top{display:flex;justify-content:space-between;align-items:flex-start;gap:var(--s-lg);flex-wrap:wrap}
-  .hero-coord{font-family:var(--sans);font-size:var(--t-xs);letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft);text-align:right;line-height:1.7}
-  .hero-coord b{display:block;color:var(--ink);font-weight:500}
-  .hero-coord .acc{color:var(--accent)}
-
-  .hero-title{font-family:var(--display);font-weight:300;font-size:var(--t-4xl);line-height:.86;letter-spacing:-.025em;color:var(--ink);max-width:14ch}
-  .hero-title em{font-style:italic;font-weight:300;color:var(--accent)}
-  .hero-title .amp{font-style:italic;color:var(--accent);font-weight:300}
-
-  .hero-bottom{display:grid;grid-template-columns:1.4fr 1fr;gap:var(--s-2xl);align-items:end;margin-top:var(--s-xl)}
-  @media(max-width:880px){.hero-bottom{grid-template-columns:1fr;gap:var(--s-xl)}}
-  .hero-tagline{font-family:var(--display);font-style:italic;font-weight:400;font-size:var(--t-lg);line-height:1.35;color:var(--ink-soft);max-width:42ch}
-  .hero-tagline span{color:var(--accent)}
-  .hero-cta-wrap{display:flex;justify-content:flex-end;align-items:center;gap:var(--s-md);flex-wrap:wrap}
-  @media(max-width:880px){.hero-cta-wrap{justify-content:flex-start}}
-
-  /* ─────────────── SECTION HEADER ─────────────── */
-  section{padding:var(--s-5xl) 0;position:relative}
-  .sec-head{display:grid;grid-template-columns:auto 1fr auto;align-items:end;gap:var(--s-lg);margin-bottom:var(--s-3xl);padding-top:var(--s-xs)}
-  .sec-head .left{display:flex;flex-direction:column;gap:var(--s-md)}
-  .sec-head h2{font-family:var(--display);font-weight:300;font-size:var(--t-3xl);line-height:.94;letter-spacing:-.02em;color:var(--ink);max-width:14ch}
-  .sec-head h2 em{font-style:italic;color:var(--accent);font-weight:300}
-  .sec-head .meta{justify-self:end;font-family:var(--sans);font-size:var(--t-xs);letter-spacing:.22em;text-transform:uppercase;color:var(--muted);text-align:right;line-height:1.7}
-  .sec-head .meta b{display:block;color:var(--ink-soft);font-weight:500}
-  .sec-head .meta .acc{color:var(--accent)}
-  @media(max-width:780px){.sec-head{grid-template-columns:1fr;gap:var(--s-md)}.sec-head .meta{justify-self:start;text-align:left}}
-
-  /* ─────────────── BENTO WORK ─────────────── */
-  .work{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--s-md)}
-  .tile{position:relative;cursor:pointer;transition:transform var(--t-mid) var(--ease-out-quint);will-change:transform}
-  .tile:hover{transform:translateY(-3px)}
-  .tile .frame{position:relative;width:100%;overflow:hidden;border-radius:calc(34px - 9px)}
-  .tile .frame img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease-out-quint), filter var(--t-mid) var(--ease-out-quint);filter:saturate(.92) contrast(1.04)}
-  .tile:hover .frame img{transform:scale(1.05);filter:saturate(1.02) contrast(1.06)}
-  .tile .scrim{position:absolute;inset:0;background:linear-gradient(180deg, oklch(0 0 0 / 0) 0%, oklch(0 0 0 / 0) 45%, oklch(0.08 0.008 40 / .8) 100%);transition:opacity var(--t-mid) var(--ease-out-quint);pointer-events:none}
-  .tile:hover .scrim{opacity:1.05}
-
-  .tile .info{position:absolute;left:0;right:0;bottom:0;padding:var(--s-xl);display:flex;justify-content:space-between;align-items:flex-end;gap:var(--s-md);color:var(--ink)}
-  .tile .info h3{font-family:var(--display);font-weight:300;font-size:var(--t-2xl);line-height:.96;letter-spacing:-.018em;max-width:14ch}
-  .tile .info h3 em{font-style:italic;color:var(--gold);font-weight:300}
-  .tile .info .credit{font-family:var(--sans);font-size:var(--t-2xs);letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:var(--s-sm);display:flex;gap:var(--s-md);flex-wrap:wrap}
-  .tile .info .credit span:not(:last-child)::after{content:"·";color:var(--muted);margin-left:var(--s-md);font-weight:500}
-  .tile .play-bezel{flex-shrink:0;width:64px;height:64px;border-radius:50%;background:color-mix(in oklab, var(--shell) 65%, transparent);border:1px solid var(--hairline-hi);backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:center;transition:background var(--t-fast) var(--ease-out-quint), transform var(--t-fast) var(--ease-out-quint)}
-  .tile:hover .play-bezel{background:var(--ink);transform:scale(1.06)}
-  .tile:hover .play-bezel svg{color:var(--bg)}
-  .tile .play-bezel svg{width:18px;height:18px;color:var(--ink);transition:color var(--t-fast) var(--ease-out-quint)}
-
-  .tile .corner-tag{position:absolute;top:var(--s-lg);left:var(--s-lg);font-family:var(--sans);font-size:var(--t-2xs);letter-spacing:.22em;text-transform:uppercase;color:var(--ink);padding:6px 12px;border-radius:999px;background:color-mix(in oklab, var(--shell) 65%, transparent);border:1px solid var(--hairline-hi);backdrop-filter:blur(10px)}
-
-  .frame.r-wide{aspect-ratio:16/10}
-  .frame.r-tall{aspect-ratio:4/5}
-  .frame.r-square{aspect-ratio:1/1}
-  .frame.r-cinema{aspect-ratio:21/9}
-
-  .t-mickeys{grid-column:span 7}
-  .t-lacolombe{grid-column:span 5}
-  .t-pinksaves{grid-column:span 5}
-  .t-pledge{grid-column:span 7}
-  @media(max-width:880px){
-    .t-mickeys,.t-lacolombe,.t-pinksaves,.t-pledge{grid-column:span 12}
-    .frame.r-tall,.frame.r-square{aspect-ratio:4/3}
-    .frame.r-cinema{aspect-ratio:16/9}
-  }
-
-  /* ─────────────── REEL FEATURE ─────────────── */
-  .reel-wrap{position:relative;cursor:pointer}
-  .reel-frame{aspect-ratio:21/9;position:relative;overflow:hidden;border-radius:calc(44px - 13px)}
-  @media(max-width:880px){.reel-frame{aspect-ratio:16/9}}
-  .reel-frame video{width:100%;height:100%;object-fit:cover;opacity:.85;transition:opacity var(--t-mid) var(--ease-out-quint), transform 2s var(--ease-out-quint)}
-  .reel-wrap:hover .reel-frame video{opacity:1;transform:scale(1.02)}
-  .reel-frame .reel-scrim{position:absolute;inset:0;background:radial-gradient(60% 50% at 50% 50%, oklch(0 0 0 / 0) 0%, oklch(0.08 0.008 40 / .5) 100%)}
-  .reel-frame .play-big{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:clamp(96px, 12vw, 160px);height:clamp(96px, 12vw, 160px);border-radius:50%;background:color-mix(in oklab, var(--shell) 50%, transparent);border:1px solid var(--ink-soft);backdrop-filter:blur(14px) saturate(160%);display:flex;align-items:center;justify-content:center;transition:transform var(--t-mid) var(--ease-out-quint), background var(--t-fast) var(--ease-out-quint)}
-  .reel-wrap:hover .play-big{transform:translate(-50%,-50%) scale(1.08);background:var(--ink)}
-  .reel-wrap:hover .play-big svg{color:var(--bg)}
-  .reel-frame .play-big svg{width:32px;height:32px;color:var(--ink);transition:color var(--t-fast) var(--ease-out-quint)}
-  .reel-frame .corner-tl,.reel-frame .corner-br{position:absolute;font-family:var(--sans);font-size:var(--t-xs);letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft);padding:var(--s-lg) var(--s-xl)}
-  .reel-frame .corner-tl{top:0;left:0;font-family:var(--display);font-style:italic;font-size:var(--t-lg);letter-spacing:-.01em;text-transform:none;color:var(--ink)}
-  .reel-frame .corner-br{bottom:0;right:0;text-align:right}
-  .reel-frame .corner-br b{display:block;color:var(--ink);font-weight:500}
-
-  /* ─────────────── ABOUT (Editorial Split) ─────────────── */
-  .about-grid{display:grid;grid-template-columns:5fr 7fr;gap:var(--s-3xl);align-items:start}
-  @media(max-width:880px){.about-grid{grid-template-columns:1fr;gap:var(--s-2xl)}}
-  .portrait-frame{aspect-ratio:4/5;position:relative;overflow:hidden;border-radius:calc(34px - 9px)}
-  .portrait-frame img{width:100%;height:100%;object-fit:cover;filter:saturate(.92) contrast(1.04)}
-  .portrait-frame .stamp{position:absolute;left:var(--s-md);bottom:var(--s-md);font-size:var(--t-2xs);letter-spacing:.22em;text-transform:uppercase;color:var(--ink);padding:6px 12px;border-radius:999px;background:color-mix(in oklab, var(--shell) 70%, transparent);border:1px solid var(--hairline-hi);backdrop-filter:blur(10px)}
-
-  .bio{display:flex;flex-direction:column;gap:var(--s-xl)}
-  .bio .copy{font-family:var(--display);font-weight:300;font-size:var(--t-xl);line-height:1.28;letter-spacing:-.005em;color:var(--ink);max-width:30ch}
-  .bio .copy p{margin-bottom:.75em}
-  .bio .copy p:last-child{margin-bottom:0}
-  .bio .copy em{font-style:italic;color:var(--accent);font-weight:300}
-
-  .spec{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--s-sm);margin-top:var(--s-md)}
-  @media(max-width:480px){.spec{grid-template-columns:1fr}}
-  .spec-cell{padding:var(--s-lg);background:var(--shell);border:1px solid var(--hairline);border-radius:22px;box-shadow:inset 0 1px 0 oklch(1 0 0 / .04)}
-  .spec-cell .k{font-size:var(--t-2xs);letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-bottom:var(--s-sm);display:block}
-  .spec-cell .v{font-family:var(--display);font-style:italic;font-weight:400;font-size:var(--t-lg);color:var(--ink);letter-spacing:-.005em;line-height:1.2}
-  .spec-cell .v b{font-style:normal;font-weight:400;color:var(--accent)}
-
-  /* ─────────────── CLIENTS BENTO ─────────────── */
-  .clients{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:minmax(160px,auto);gap:var(--s-md)}
-  .c-feature{grid-column:span 6;grid-row:span 2;display:flex;align-items:flex-end;padding:var(--s-2xl)}
-  .c-feature .inside{font-family:var(--display);font-weight:300;font-style:italic;font-size:var(--t-2xl);line-height:1;letter-spacing:-.015em;color:var(--ink);max-width:16ch}
-  .c-feature .inside b{font-style:normal;font-weight:400;color:var(--accent)}
-  .c-feature .eyebrow{position:absolute;top:var(--s-lg);left:var(--s-lg)}
-  .c-feature{position:relative}
-  .c-logo{grid-column:span 3;display:flex;align-items:center;justify-content:center}
-  .c-logo img{max-height:48%;max-width:75%;object-fit:contain;filter:brightness(0) invert(.94) opacity(.6);transition:filter var(--t-fast) var(--ease-out-quint),transform var(--t-fast) var(--ease-out-quint)}
-  .c-logo:hover img{filter:brightness(0) invert(.98) opacity(1);transform:scale(1.05)}
-  .c-text{grid-column:span 3;display:flex;align-items:center;justify-content:center;padding:var(--s-lg);text-align:center}
-  .c-text .t{font-family:var(--display);font-style:italic;font-weight:400;font-size:var(--t-xl);color:var(--ink-soft);letter-spacing:-.005em;line-height:1.1}
-  .c-text .t b{font-style:normal;font-weight:400;color:var(--accent)}
-  @media(max-width:880px){
-    .c-feature{grid-column:span 12;grid-row:span 1;min-height:200px}
-    .c-logo,.c-text{grid-column:span 6;min-height:140px}
-  }
-
-  /* ─────────────── CONTACT (Editorial Split) ─────────────── */
-  .contact-grid{display:grid;grid-template-columns:7fr 5fr;gap:var(--s-3xl);align-items:end}
-  @media(max-width:880px){.contact-grid{grid-template-columns:1fr;gap:var(--s-2xl)}}
-  .statement{font-family:var(--display);font-weight:300;font-size:var(--t-3xl);line-height:.94;letter-spacing:-.022em;color:var(--ink)}
-  .statement em{font-style:italic;color:var(--accent);font-weight:300}
-
-  .contact-cards{display:flex;flex-direction:column;gap:var(--s-sm)}
-  .ccard{padding:var(--s-lg) var(--s-xl);display:flex;align-items:center;justify-content:space-between;gap:var(--s-md)}
-  .ccard .lhs{display:flex;flex-direction:column;gap:6px}
-  .ccard .lhs .k{font-size:var(--t-2xs);letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
-  .ccard .lhs .v{font-family:var(--display);font-style:italic;font-weight:400;font-size:var(--t-lg);color:var(--ink);letter-spacing:-.005em}
-  .ccard .arrow{flex-shrink:0;width:42px;height:42px;border-radius:50%;background:var(--bg-2);border:1px solid var(--hairline);display:inline-flex;align-items:center;justify-content:center;color:var(--ink-soft);transition:transform var(--t-fast) var(--ease-out-quint), background var(--t-fast) var(--ease-out-quint), color var(--t-fast) var(--ease-out-quint)}
-  .ccard:hover .arrow{background:var(--accent);color:var(--bg);transform:translate(3px,-2px)}
-
-  /* ─────────────── FOOTER ─────────────── */
-  footer{padding:var(--s-xl) 0 var(--s-xl);border-top:1px solid var(--hairline);background:var(--bg)}
-  .foot{display:flex;justify-content:space-between;align-items:center;gap:var(--s-md);font-size:var(--t-2xs);letter-spacing:.22em;text-transform:uppercase;color:var(--muted);flex-wrap:wrap}
-  .foot .acc{color:var(--accent)}
-
-  /* ─────────────── LIGHTBOX ─────────────── */
-  .lb{position:fixed;inset:0;background:color-mix(in oklab, var(--bg) 88%, transparent);backdrop-filter:blur(22px) saturate(140%);z-index:100;display:none;align-items:center;justify-content:center;padding:5vh 5vw;opacity:0;transition:opacity var(--t-mid) var(--ease-out-quint)}
-  .lb.open{display:flex;opacity:1}
-  .lb-inner{width:100%;max-width:1400px;aspect-ratio:16/9;position:relative;background:var(--bg);border-radius:24px;padding:8px;border:1px solid var(--hairline);box-shadow:0 60px 120px -30px oklch(0 0 0 / .7)}
-  .lb-inner iframe{width:100%;height:100%;border:0;border-radius:18px}
-  .lb-close{position:absolute;top:-52px;right:0;font-size:var(--t-xs);letter-spacing:.22em;text-transform:uppercase;color:var(--ink);display:inline-flex;align-items:center;gap:var(--s-sm);padding:8px 14px;border-radius:999px;border:1px solid var(--hairline-hi);background:var(--shell)}
-  .lb-close::after{content:"";width:10px;height:10px;background:linear-gradient(45deg, transparent 47%, var(--ink) 47% 53%, transparent 53%), linear-gradient(-45deg, transparent 47%, var(--ink) 47% 53%, transparent 53%)}
-
-  /* ─────────────── REVEAL ANIM ─────────────── */
-  .reveal{opacity:0;transform:translateY(28px);filter:blur(8px);transition:opacity var(--t-slow) var(--ease-out-quint), transform var(--t-slow) var(--ease-out-quint), filter var(--t-slow) var(--ease-out-quint)}
-  .reveal.in{opacity:1;transform:none;filter:blur(0)}
-  .reveal[data-stagger="1"]{transition-delay:60ms}
-  .reveal[data-stagger="2"]{transition-delay:120ms}
-  .reveal[data-stagger="3"]{transition-delay:180ms}
-  .reveal[data-stagger="4"]{transition-delay:240ms}
-
-  @media (prefers-reduced-motion: reduce){
-    .reveal{opacity:1;transform:none;filter:none;transition:none}
-    .marquee{animation:none}
-    .hero-bg video,.reel-frame video{display:none}
-    .pulse{animation:none}
-  }
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+*[tabindex]:focus-visible, input[type="file"]:focus-visible {
+  outline: 0.125rem solid #4d65ff;
+  outline-offset: 0.125rem;
+}
+.inherit-color * { color: inherit; }
+.w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child { margin-top: 0 !important; }
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child { margin-bottom: 0 !important; }
+.container-medium,.container-small,.container-large { margin-right: auto !important; margin-left: auto !important; }
+.text-style-3lines { display: -webkit-box; overflow: hidden; -webkit-line-clamp: 3; -webkit-box-orient: vertical; }
+.text-style-2lines { display: -webkit-box; overflow: hidden; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.display-inlineflex { display: inline-flex; }
+.hide { display: none !important; }
+@media screen and (max-width: 991px) { .hide, .hide-tablet { display: none !important; } }
+@media screen and (max-width: 767px) { .hide-mobile-landscape { display: none !important; } }
+@media screen and (max-width: 479px) { .hide-mobile { display: none !important; } }
+.margin-0 { margin: 0rem !important; }
+.padding-0 { padding: 0rem !important; }
+.spacing-clean { padding: 0rem !important; margin: 0rem !important; }
+.sidebar::-webkit-scrollbar { display: none; }
+.sidebar { -ms-overflow-style: none; scrollbar-width: none; }
+.spacer * { padding: 0 }
 </style>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"/>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+<script type="text/javascript">WebFont.load({ google: { families: ["Inter:300,400,500,600,700"] } });</script>
+<script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+<link href="https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69eae824aac7765d100a42c2_faVICON.jpg" rel="shortcut icon" type="image/x-icon"/>
+<link href="https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69eae86137865b8ad35c2828_web%20icon.jpg" rel="apple-touch-icon"/>
 </head>
 <body>
+<div class="page-wrapper">
 
-<div class="grain" aria-hidden="true"></div>
-
-<!-- FLUID ISLAND NAV -->
-<header class="nav-island">
-  <div class="nav-pill">
-    <a href="#top" class="nav-brand"><b>Jessie</b><em> Juarez</em></a>
-    <nav class="nav-links" aria-label="Primary">
-      <a href="#work">Work</a>
-      <a href="#reel">Reel</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <span class="nav-status"><span class="pulse"></span>LA · Available</span>
+  <!-- NAV -->
+  <div data-animation="default" class="navbar w-nav" data-easing2="ease-in-back" animation="navbar" data-easing="ease-out" data-collapse="medium" role="banner" data-no-scroll="1" data-duration="500">
+    <div class="padding-global is-navbar">
+      <div class="container-full">
+        <div class="navbar_content">
+          <a navbar="item" href="/" aria-current="page" class="navbar_logo-link w-nav-brand w--current">
+            <div class="text-xs text-color-on-primary">Jessie Juarez</div>
+          </a>
+          <div navbar="item" class="nav_buttons-wrap">
+            <div class="text-xs hide-tablet">Los Angeles, California</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</header>
 
-<main id="top">
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-bg">
-      <video autoplay loop muted playsinline poster="assets/reel-poster.jpg">
-        <source src="assets/reel.mp4" type="video/mp4">
+  <!-- HERO VIDEO -->
+  <section>
+    <div data-poster-url="https://cdn.prod.website-files.com/69d85207c980b911109c8bdf%2F69d853817fff32a303fac211_2025_website_v1%20%281080p%29_poster.0000000.jpg"
+         data-video-urls="https://cdn.prod.website-files.com/69d85207c980b911109c8bdf%2F69d853817fff32a303fac211_2025_website_v1%20%281080p%29_mp4.mp4,https://cdn.prod.website-files.com/69d85207c980b911109c8bdf%2F69d853817fff32a303fac211_2025_website_v1%20%281080p%29_webm.webm"
+         data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video-3 w-background-video w-background-video-atom">
+      <video autoplay loop style="background-image:url('https://cdn.prod.website-files.com/69d85207c980b911109c8bdf%2F69d853817fff32a303fac211_2025_website_v1%20%281080p%29_poster.0000000.jpg')" muted playsinline data-wf-ignore="true" data-object-fit="cover">
+        <source src="https://cdn.prod.website-files.com/69d85207c980b911109c8bdf%2F69d853817fff32a303fac211_2025_website_v1%20%281080p%29_mp4.mp4" data-wf-ignore="true"/>
+        <source src="https://cdn.prod.website-files.com/69d85207c980b911109c8bdf%2F69d853817fff32a303fac211_2025_website_v1%20%281080p%29_webm.webm" data-wf-ignore="true"/>
       </video>
-    </div>
-
-    <div class="hero-inner">
-      <div class="hero-top">
-        <span class="eyebrow reveal"><span class="pip"></span>Portfolio · 2026</span>
-        <div class="hero-coord reveal" data-stagger="1">
-          <b>34.05° N</b>
-          118.24° W<br>
-          <span class="acc">Los Angeles, CA</span>
-        </div>
+      <div class="hero_links">
+        <a arrow-links="item" href="https://www.youtube.com/channel/UCDjSsLvRyiJxwCcUv-1fZOA" target="_blank" class="hero_link w-inline-block">
+          <div class="text-xs">Youtube</div>
+          <div class="hero_link-arrow">
+            <div class="icon-1x1-small is-1"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none"><path d="M5.08316 4.55289H11.4471V10.9169M11.0052 4.99483L4.55283 11.4472" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"></path></svg></div>
+            <div class="icon-1x1-small is-2"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none"><path d="M5.08316 4.55289H11.4471V10.9169M11.0052 4.99483L4.55283 11.4472" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"></path></svg></div>
+          </div>
+        </a>
+        <a arrow-links="item" href="https://vimeo.com/user82142532?fl=pp&fe=sh" target="_blank" class="hero_link w-inline-block">
+          <div class="text-xs">Vimeo</div>
+          <div class="hero_link-arrow">
+            <div class="icon-1x1-small is-1"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none"><path d="M5.08316 4.55289H11.4471V10.9169M11.0052 4.99483L4.55283 11.4472" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"></path></svg></div>
+            <div class="icon-1x1-small is-2"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none"><path d="M5.08316 4.55289H11.4471V10.9169M11.0052 4.99483L4.55283 11.4472" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"></path></svg></div>
+          </div>
+        </a>
+        <a arrow-links="item" href="https://www.linkedin.com/in/jessie-juarez-03b73b193/" target="_blank" class="hero_link w-inline-block">
+          <div class="text-xs">Linkedin</div>
+          <div class="hero_link-arrow">
+            <div class="icon-1x1-small is-1"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none"><path d="M5.08316 4.55289H11.4471V10.9169M11.0052 4.99483L4.55283 11.4472" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"></path></svg></div>
+            <div class="icon-1x1-small is-2"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none"><path d="M5.08316 4.55289H11.4471V10.9169M11.0052 4.99483L4.55283 11.4472" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"></path></svg></div>
+          </div>
+        </a>
+        <a arrow-links="item" href="https://www.instagram.com/jessiejuarez__/?hl=en" target="_blank" class="hero_link w-inline-block">
+          <div class="text-xs">Instagram</div>
+          <div class="hero_link-arrow">
+            <div class="icon-1x1-small is-1"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none"><path d="M5.08316 4.55289H11.4471V10.9169M11.0052 4.99483L4.55283 11.4472" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"></path></svg></div>
+            <div class="icon-1x1-small is-2"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none"><path d="M5.08316 4.55289H11.4471V10.9169M11.0052 4.99483L4.55283 11.4472" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"></path></svg></div>
+          </div>
+        </a>
       </div>
-
-      <h1 class="hero-title reveal" data-stagger="2">
-        Jessie<br>
-        <em>Juarez,</em><br>
-        cinematographer<br>
-        <span class="amp">&amp;</span> editor.
-      </h1>
-
-      <div class="hero-bottom">
-        <p class="hero-tagline reveal" data-stagger="3">
-          Bilingual <span>(EN&nbsp;/&nbsp;ES)</span> DP and editor — six-plus years of commercial, broadcast, and live work across <span>21+ TV markets</span>, including the National Spanish Radio Broadcast for <span>Super Bowl LX.</span>
-        </p>
-        <div class="hero-cta-wrap reveal" data-stagger="4">
-          <a href="#reel" class="btn">
-            Watch Reel
-            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 5h14v14M19 5L5 19" stroke-linecap="round"/></svg></span>
-          </a>
-        </div>
-      </div>
+      <div class="padding-global is-padd-hero"></div>
     </div>
   </section>
 
-  <!-- WORK -->
-  <section id="work">
-    <div class="wrap">
-      <div class="sec-head">
-        <div class="left reveal">
-          <span class="eyebrow"><span class="pip"></span>Selected — 01 / 05</span>
-          <h2>Selected<br><em>work.</em></h2>
-        </div>
-        <div></div>
-        <div class="meta reveal" data-stagger="1">
-          <b>Four films · 2024–2026</b>
-          <span class="acc">Click any tile to watch</span>
-        </div>
-      </div>
+  <main class="main-wrapper">
 
-      <div class="work">
-        <article class="tile t-mickeys reveal" data-vimeo="1180342736">
-          <div class="bezel">
-            <div class="bezel-inner">
-              <div class="frame r-wide"><img src="assets/thumb-mickeys.jpg" alt="Mickey's Story — film still" loading="eager"></div>
-              <div class="scrim"></div>
-              <span class="corner-tag">2026</span>
-              <div class="info">
-                <div>
-                  <div class="credit"><span>Brand Film</span><span>DP</span></div>
-                  <h3>Mickey's<br><em>Story</em></h3>
+    <section id="exhibitions" class="section_exhibitions">
+      <div class="padding-global"></div>
+    </section>
+
+    <!-- WORK / COLLECTIONS -->
+    <section id="collections" class="section_collections">
+      <div class="padding-global">
+        <div class="container-full is-collections">
+          <div class="collections_wrap">
+
+            <div class="collection_card is-1">
+              <div class="collection_image">
+                <img sizes="(max-width: 1920px) 100vw, 1920px"
+                     srcset="https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69dc4eaf65f79ef9af786fba_thumb%20(2)-p-500.jpg 500w, https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69dc4eaf65f79ef9af786fba_thumb%20(2)-p-800.jpg 800w, https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69dc4eaf65f79ef9af786fba_thumb%20(2)-p-1080.jpg 1080w, https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69dc4eaf65f79ef9af786fba_thumb%20(2)-p-1600.jpg 1600w, https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69dc4eaf65f79ef9af786fba_thumb%20(2).jpg 1920w"
+                     alt="Mickey's Story" loading="eager"
+                     src="https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69dc4eaf65f79ef9af786fba_thumb%20(2).jpg" class="img"/>
+                <div class="collection_gradient"></div>
+                <div class="collection_detail">
+                  <div class="text-xs">Mickey&#x27;s Story</div>
+                  <a href="https://vimeo.com/1180342736?share=copy&fl=sv&fe=ci" target="_blank" class="link">WATCH</a>
+                  <div class="text-xs text-color-secondary">(2026)</div>
                 </div>
-                <span class="play-bezel"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
               </div>
             </div>
-          </div>
-        </article>
 
-        <article class="tile t-lacolombe reveal" data-stagger="1" data-vimeo="1133547551">
-          <div class="bezel">
-            <div class="bezel-inner">
-              <div class="frame r-tall"><img src="assets/thumb-lacolombe.jpg" alt="La Colombe — film still" loading="lazy"></div>
-              <div class="scrim"></div>
-              <span class="corner-tag">2026</span>
-              <div class="info">
-                <div>
-                  <div class="credit"><span>Short Film</span><span>DP + Edit</span></div>
-                  <h3>La<br><em>Colombe</em></h3>
+            <div class="collection_card is-2">
+              <div class="collection_image">
+                <img sizes="(max-width: 1920px) 100vw, 1920px"
+                     srcset="https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69dc43d2b0e2d0e638a046ac_thumb%20(1)-p-500.jpg 500w, https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69dc43d2b0e2d0e638a046ac_thumb%20(1)-p-800.jpg 800w, https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69dc43d2b0e2d0e638a046ac_thumb%20(1)-p-1080.jpg 1080w, https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69dc43d2b0e2d0e638a046ac_thumb%20(1)-p-1600.jpg 1600w, https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69dc43d2b0e2d0e638a046ac_thumb%20(1).jpg 1920w"
+                     alt="LA Colombe" loading="lazy"
+                     src="https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69dc43d2b0e2d0e638a046ac_thumb%20(1).jpg" class="img"/>
+                <div class="collection_gradient"></div>
+                <div class="collection_detail">
+                  <div class="text-xs">LA Colombe</div>
+                  <a href="https://vimeo.com/1133547551?share=copy&fl=sv&fe=ci" target="_blank" class="link">WATCH</a>
+                  <div class="text-xs text-color-secondary">(2026)</div>
                 </div>
-                <span class="play-bezel"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
               </div>
             </div>
-          </div>
-        </article>
 
-        <article class="tile t-pinksaves reveal" data-vimeo="1128693765">
-          <div class="bezel">
-            <div class="bezel-inner">
-              <div class="frame r-square"><img src="assets/thumb-pinksaves.jpg" alt="Pink Saves — film still" loading="lazy"></div>
-              <div class="scrim"></div>
-              <span class="corner-tag">2025</span>
-              <div class="info">
-                <div>
-                  <div class="credit"><span>Campaign</span><span>DP + Edit</span></div>
-                  <h3>Pink<br><em>Saves</em></h3>
+            <div class="collection_card is-3">
+              <div class="collection_image">
+                <img sizes="(max-width: 1920px) 100vw, 1920px"
+                     srcset="https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69dc598506cb105a3abeb29a_thumb%20(3)-p-500.jpg 500w, https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69dc598506cb105a3abeb29a_thumb%20(3)-p-800.jpg 800w, https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69dc598506cb105a3abeb29a_thumb%20(3)-p-1080.jpg 1080w, https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69dc598506cb105a3abeb29a_thumb%20(3)-p-1600.jpg 1600w, https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69dc598506cb105a3abeb29a_thumb%20(3).jpg 1920w"
+                     alt="Pink Saves" loading="lazy"
+                     src="https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69dc598506cb105a3abeb29a_thumb%20(3).jpg" class="img"/>
+                <div class="collection_gradient"></div>
+                <div class="collection_detail">
+                  <div class="text-xs">Pink Saves</div>
+                  <a href="https://vimeo.com/1128693765?share=copy&fl=sv&fe=ci" target="_blank" class="link">WATCH</a>
+                  <div class="text-xs text-color-secondary">(2025)</div>
                 </div>
-                <span class="play-bezel"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
               </div>
             </div>
-          </div>
-        </article>
 
-        <article class="tile t-pledge reveal" data-stagger="1" data-vimeo="1182499713">
-          <div class="bezel">
-            <div class="bezel-inner">
-              <div class="frame r-cinema"><img src="assets/thumb-pledge.jpg" alt="Pledge of Allegiance — film still" loading="lazy"></div>
-              <div class="scrim"></div>
-              <span class="corner-tag">2024</span>
-              <div class="info">
-                <div>
-                  <div class="credit"><span>Broadcast</span><span>DP</span></div>
-                  <h3>Pledge of<br><em>Allegiance</em></h3>
+            <div class="collection_card is-4">
+              <div class="collection_image">
+                <img sizes="(max-width: 3840px) 100vw, 3840px"
+                     srcset="https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69dc622155062b9fdea26b96_thumb%20(5)-p-500.jpg 500w, https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69dc622155062b9fdea26b96_thumb%20(5)-p-800.jpg 800w, https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69dc622155062b9fdea26b96_thumb%20(5)-p-1080.jpg 1080w, https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69dc622155062b9fdea26b96_thumb%20(5)-p-1600.jpg 1600w, https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69dc622155062b9fdea26b96_thumb%20(5)-p-2000.jpg 2000w, https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69dc622155062b9fdea26b96_thumb%20(5)-p-2600.jpg 2600w, https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69dc622155062b9fdea26b96_thumb%20(5)-p-3200.jpg 3200w, https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69dc622155062b9fdea26b96_thumb%20(5).jpg 3840w"
+                     alt="Pledge of Allegiance" loading="lazy"
+                     src="https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69dc622155062b9fdea26b96_thumb%20(5).jpg" class="img"/>
+                <div class="collection_gradient"></div>
+                <div class="collection_detail">
+                  <div class="text-xs">Pledge of <br/>Allegiance</div>
+                  <a href="https://vimeo.com/1182499713?share=copy&fl=sv&fe=ci" target="_blank" class="link">WATCH</a>
+                  <div class="text-xs text-color-secondary">(2024)</div>
                 </div>
-                <span class="play-bezel"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
               </div>
             </div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
 
-  <!-- REEL FEATURE -->
-  <section id="reel" style="padding-top:0">
-    <div class="wrap">
-      <div class="sec-head">
-        <div class="left reveal">
-          <span class="eyebrow"><span class="pip"></span>The Reel — 02 / 05</span>
-          <h2>The <em>reel.</em></h2>
-        </div>
-        <div></div>
-        <div class="meta reveal" data-stagger="1">
-          <b>2025 · 01:42</b>
-          <span class="acc">Click to unmute</span>
-        </div>
-      </div>
-
-      <div class="reel-wrap reveal" id="reelWrap">
-        <div class="bezel bezel-lg">
-          <div class="bezel-inner">
-            <div class="reel-frame">
-              <video id="reelVideo" loop playsinline muted autoplay poster="assets/reel-poster.jpg">
-                <source src="assets/reel.mp4" type="video/mp4">
-              </video>
-              <div class="reel-scrim"></div>
-              <button class="play-big" aria-label="Toggle sound / play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
-              <div class="corner-tl"><em>2025 reel.</em></div>
-              <div class="corner-br"><b>01:42</b>Tap to unmute</div>
-            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+      <div class="padding-section-large"></div>
+    </section>
 
-  <!-- ABOUT -->
-  <section id="about" style="padding-top:0">
-    <div class="wrap">
-      <div class="sec-head">
-        <div class="left reveal">
-          <span class="eyebrow"><span class="pip"></span>About — 03 / 05</span>
-          <h2>About<br><em>Jessie.</em></h2>
+    <!-- CLIENTS -->
+    <section class="clients">
+      <h3 class="heading">Brands I&#x27;ve Created for</h3>
+      <div class="carousel-container">
+        <div class="logo-container">
+          <img src="https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69e3f194831497bb43a801a0_KODAK.png" loading="lazy" width="198" alt="Kodak" class="logo-image"/>
+          <img src="https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69e3f1943d38d5087ceb0e1d_Web%20Logos.png" loading="lazy" width="190" alt="" class="logo-image"/>
+          <img src="https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69e3f194d1a0e36cc4c9d968_KOADK.png" loading="lazy" width="200" alt="" class="logo-image"/>
+          <img src="https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69e3f194051a09e836b68c46_EVC.png" loading="lazy" width="249" alt="EVC" class="logo-image"/>
+          <img src="https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69e3f2fc07d8f068b78d710d_TITOS.png" loading="lazy" width="206" alt="Tito's" class="logo-image"/>
         </div>
-        <div></div>
-        <div class="meta reveal" data-stagger="1">
-          <b>Based in LA</b>
-          <span class="acc">Bilingual · EN / ES</span>
+        <div class="logo-container" aria-hidden="true">
+          <img src="https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69e3f194831497bb43a801a0_KODAK.png" loading="lazy" width="198" alt="" class="logo-image"/>
+          <img src="https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69e3f1943d38d5087ceb0e1d_Web%20Logos.png" loading="lazy" width="190" alt="" class="logo-image"/>
+          <img src="https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69e3f194d1a0e36cc4c9d968_KOADK.png" loading="lazy" width="200" alt="" class="logo-image"/>
+          <img src="https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69e3f194051a09e836b68c46_EVC.png" loading="lazy" width="249" alt="" class="logo-image"/>
+          <img src="https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69e3f2fc07d8f068b78d710d_TITOS.png" loading="lazy" width="206" alt="" class="logo-image"/>
         </div>
       </div>
+    </section>
 
-      <div class="about-grid">
-        <div class="reveal">
-          <div class="bezel">
-            <div class="bezel-inner">
-              <div class="portrait-frame">
-                <img src="assets/portrait.jpg" alt="Portrait of Jessie Juarez">
-                <span class="stamp">JJ · 2026</span>
+    <!-- ABOUT -->
+    <section id="testimonials" class="section_testimonials">
+      <div class="padding-section-large"></div>
+      <div class="padding-global">
+        <div class="container-large is-testimonials">
+          <div animation="word-by-word" class="text-xs">About</div>
+          <div class="w-layout-grid testimonial_slider">
+            <div class="testimonials_img-content">
+              <div class="testimonials_img">
+                <img src="https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69d8520fc980b911109c8de5_pfp-3.avif" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" srcset="https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69d8520fc980b911109c8de5_pfp-3-p-500.avif 500w, https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69d8520fc980b911109c8de5_pfp-3.avif 800w" alt="" class="img is-person-3"/>
+                <img src="https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69d8520fc980b911109c8de4_pfp-2.avif" loading="lazy" sizes="(max-width: 800px) 100vw, 800px" srcset="https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69d8520fc980b911109c8de4_pfp-2-p-500.avif 500w, https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69d8520fc980b911109c8de4_pfp-2.avif 800w" alt="" class="img is-person-2"/>
+                <img src="https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69dc23b1aae47eac194a5bb3_Smaller.jpg" loading="lazy" sizes="(max-width: 720px) 100vw, 720px" srcset="https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69dc23b1aae47eac194a5bb3_Smaller-p-500.jpg 500w, https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/69dc23b1aae47eac194a5bb3_Smaller.jpg 720w" alt="" class="img is-person-1"/>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div class="bio">
-          <div class="copy reveal" data-stagger="1">
-            <p>Bilingual <em>cinematographer and editor</em> based in Los Angeles. Six-plus years across commercial production, broadcast, and live events.</p>
-            <p>Led multi-platform campaigns across <em>21+ television markets</em> and directed high-profile Spanish-language broadcast — including the National Spanish Radio Broadcast for <em>Super Bowl LX.</em></p>
-            <p>Works the full lifecycle: concept, pre-production, production, post. Helps clients land six-figure broadcast contracts.</p>
-            <p>Fluent in English and Spanish. Creative vision, operational precision.</p>
-          </div>
-
-          <div class="spec reveal" data-stagger="2">
-            <div class="spec-cell">
-              <span class="k">Role</span>
-              <div class="v"><b>DP</b> · Editor · Director</div>
-            </div>
-            <div class="spec-cell">
-              <span class="k">Languages</span>
-              <div class="v"><b>English</b> · Español</div>
-            </div>
-            <div class="spec-cell">
-              <span class="k">Format</span>
-              <div class="v">Broadcast · Commercial · <b>Live</b></div>
-            </div>
-            <div class="spec-cell">
-              <span class="k">Based</span>
-              <div class="v"><b>Los Angeles</b>, CA</div>
+            <div class="testimonial_content">
+              <div animation="line-by-line" class="text-2xl">Jessie Juarez is a bilingual Video Editor and Director of Photography with 6+ years of experience spanning commercial production, broadcast, and live events. <br/><br/>Based in Los Angeles, he has led multi-platform campaigns across 21+ television markets and directed high-profile Spanish-language broadcast content — including production for the National Radio Spanish Broadcast for Super Bowl LX. <br/><br/>His work spans the full production lifecycle, from concept and pre-production through post-production delivery, with a proven track record of helping clients secure six-figure contracts. <br/><br/>Fluent in English and Spanish, Jessie brings both creative vision and operational precision to every project.</div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+      <div class="padding-section-large"></div>
+    </section>
 
-  <!-- CLIENTS -->
-  <section id="clients" style="padding-top:0">
-    <div class="wrap">
-      <div class="sec-head">
-        <div class="left reveal">
-          <span class="eyebrow"><span class="pip"></span>Clients — 04 / 05</span>
-          <h2>Selected<br><em>clients.</em></h2>
-        </div>
-        <div></div>
-        <div class="meta reveal" data-stagger="1">
-          <b>Brands &amp; broadcasters</b>
-          <span class="acc">2019 – present</span>
-        </div>
-      </div>
-
-      <div class="clients">
-        <div class="bezel c-feature reveal">
-          <div class="bezel-inner" style="position:relative;width:100%;height:100%;padding:var(--s-xl)">
-            <span class="eyebrow"><span class="pip"></span>Featured</span>
-            <div class="inside" style="position:absolute;left:var(--s-xl);right:var(--s-xl);bottom:var(--s-xl)">National Spanish Radio Broadcast for <b>Super Bowl LX.</b></div>
+    <!-- FOOTER -->
+    <footer>
+      <div class="padding-section-large"></div>
+      <div class="padding-global">
+        <div class="container-large is-footer">
+          <div class="footer_header">
+            <div class="footer_content is-46rem">
+              <div animation="line-by-line" class="text-4xl">In a world drowning in content, create something real</div>
+              <div animation="line-by-line" class="text-block-2">Let&#x27;s Connect</div>
+            </div>
           </div>
-        </div>
-
-        <div class="bezel c-logo reveal" data-stagger="1">
-          <div class="bezel-inner" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;padding:var(--s-lg)">
-            <img src="assets/logo-kodak.png" alt="Kodak">
-          </div>
-        </div>
-
-        <div class="bezel c-logo reveal" data-stagger="2">
-          <div class="bezel-inner" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;padding:var(--s-lg)">
-            <img src="assets/logo-titos.png" alt="Tito's Handmade Vodka">
-          </div>
-        </div>
-
-        <div class="bezel c-logo reveal" data-stagger="1">
-          <div class="bezel-inner" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;padding:var(--s-lg)">
-            <img src="assets/logo-evc.png" alt="EVC">
-          </div>
-        </div>
-
-        <div class="bezel c-logo reveal" data-stagger="2">
-          <div class="bezel-inner" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;padding:var(--s-lg)">
-            <img src="assets/logo-extra.png" alt="Client">
-          </div>
-        </div>
-
-        <div class="bezel c-text reveal">
-          <div class="bezel-inner" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;padding:var(--s-lg)">
-            <div class="t"><b>21+</b><br>TV markets</div>
-          </div>
-        </div>
-
-        <div class="bezel c-text reveal" data-stagger="1">
-          <div class="bezel-inner" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;padding:var(--s-lg)">
-            <div class="t"><em>&amp; more</em><br>on request</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" style="padding-top:0">
-    <div class="wrap">
-      <div class="sec-head">
-        <div class="left reveal">
-          <span class="eyebrow"><span class="pip"></span>Contact — 05 / 05</span>
-          <h2>Let's<br><em>connect.</em></h2>
-        </div>
-        <div></div>
-        <div class="meta reveal" data-stagger="1">
-          <b>Booking · 2026</b>
-          <span class="acc">Mon–Fri · LA time</span>
-        </div>
-      </div>
-
-      <div class="contact-grid">
-        <div class="statement reveal">
-          In a world drowning in content,<br>
-          <em>make something real.</em>
-        </div>
-
-        <div class="contact-cards">
-          <a class="bezel ccard reveal" data-stagger="1" href="mailto:hello@jessiejuarez.com">
-            <div class="bezel-inner" style="display:flex;align-items:center;justify-content:space-between;padding:var(--s-lg) var(--s-xl);width:100%">
-              <div class="lhs">
-                <span class="k">Email</span>
-                <span class="v">hello@jessiejuarez.com</span>
+          <div class="footer_header">
+            <div class="footer_links">
+              <div class="footer_links_column">
+                <a navbar="" href="https://www.instagram.com/jessiejuarez__/?hl=en" target="_blank" class="nav_links w-inline-block">
+                  <div class="text-xs is-1">Instagram</div>
+                  <div class="text-xs is-2">Instagram</div>
+                </a>
+                <a navbar="" href="https://www.youtube.com/channel/UCDjSsLvRyiJxwCcUv-1fZOA" target="_blank" class="nav_links w-inline-block">
+                  <div class="text-xs is-1">Youtube</div>
+                  <div class="text-xs is-2">Youtube</div>
+                </a>
+                <a navbar="" href="https://vimeo.com/user82142532?fl=pp&fe=sh" target="_blank" class="nav_links w-inline-block">
+                  <div class="text-xs is-1">Vimeo</div>
+                  <div class="text-xs is-2">Vimeo</div>
+                </a>
+                <a navbar="" href="https://www.linkedin.com/in/jessie-juarez-03b73b193/" target="_blank" class="nav_links w-inline-block">
+                  <div class="text-xs is-1">Linkedin</div>
+                  <div class="text-xs is-2">Linkedin</div>
+                </a>
               </div>
-              <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" width="14" height="14"><path d="M5 5h14v14M19 5L5 19" stroke-linecap="round"/></svg></span>
             </div>
-          </a>
-
-          <a class="bezel ccard reveal" data-stagger="2" href="https://vimeo.com/user82142532" target="_blank" rel="noopener">
-            <div class="bezel-inner" style="display:flex;align-items:center;justify-content:space-between;padding:var(--s-lg) var(--s-xl);width:100%">
-              <div class="lhs">
-                <span class="k">Watch More</span>
-                <span class="v">Vimeo / YouTube</span>
-              </div>
-              <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" width="14" height="14"><path d="M5 5h14v14M19 5L5 19" stroke-linecap="round"/></svg></span>
+            <div class="footer_links_column">
+              <div class="text-xs">Los Angeles, California</div>
             </div>
-          </a>
-
-          <a class="bezel ccard reveal" data-stagger="3" href="https://www.instagram.com/jessiejuarez__/" target="_blank" rel="noopener">
-            <div class="bezel-inner" style="display:flex;align-items:center;justify-content:space-between;padding:var(--s-lg) var(--s-xl);width:100%">
-              <div class="lhs">
-                <span class="k">Day-to-day</span>
-                <span class="v">Instagram · @jessiejuarez__</span>
-              </div>
-              <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" width="14" height="14"><path d="M5 5h14v14M19 5L5 19" stroke-linecap="round"/></svg></span>
-            </div>
-          </a>
-
-          <a class="bezel ccard reveal" data-stagger="4" href="https://www.linkedin.com/in/jessie-juarez-03b73b193/" target="_blank" rel="noopener">
-            <div class="bezel-inner" style="display:flex;align-items:center;justify-content:space-between;padding:var(--s-lg) var(--s-xl);width:100%">
-              <div class="lhs">
-                <span class="k">Professional</span>
-                <span class="v">LinkedIn</span>
-              </div>
-              <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" width="14" height="14"><path d="M5 5h14v14M19 5L5 19" stroke-linecap="round"/></svg></span>
-            </div>
-          </a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-</main>
+      <div class="padding-section-large"></div>
+      <div class="footer_loop">
+        <div class="footer_loop-content"></div>
+        <div class="footer_loop-content"></div>
+      </div>
+    </footer>
 
-<footer>
-  <div class="wrap foot">
-    <span>© 2026 Jessie Juarez</span>
-    <span><span class="acc">✦</span> Made in Los Angeles</span>
-    <span><a href="mailto:hello@jessiejuarez.com">hello@jessiejuarez.com</a></span>
-  </div>
-</footer>
-
-<!-- LIGHTBOX -->
-<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Video player">
-  <div class="lb-inner">
-    <button class="lb-close" id="lbClose" aria-label="Close">Close</button>
-    <iframe id="lbFrame" src="" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-  </div>
+  </main>
 </div>
 
-<script>
-  // ── Vimeo lightbox ──
-  const lb = document.getElementById('lb');
-  const frame = document.getElementById('lbFrame');
-  const close = document.getElementById('lbClose');
-  document.querySelectorAll('.tile[data-vimeo]').forEach(tile => {
-    tile.addEventListener('click', () => {
-      const id = tile.dataset.vimeo;
-      frame.src = `https://player.vimeo.com/video/${id}?autoplay=1&title=0&byline=0&portrait=0`;
-      lb.classList.add('open');
-      document.body.style.overflow = 'hidden';
-    });
-  });
-  function closeLb(){ lb.classList.remove('open'); frame.src=''; document.body.style.overflow=''; }
-  close.addEventListener('click', closeLb);
-  lb.addEventListener('click', e => { if(e.target === lb) closeLb(); });
-  document.addEventListener('keydown', e => { if(e.key === 'Escape') closeLb(); });
-
-  // ── Reel unmute toggle ──
-  const reelWrap = document.getElementById('reelWrap');
-  const reelVid = document.getElementById('reelVideo');
-  reelWrap.addEventListener('click', () => {
-    reelVid.muted = !reelVid.muted;
-    if (reelVid.paused) reelVid.play();
-  });
-
-  // ── Reveal on scroll ──
-  const io = new IntersectionObserver(entries => {
-    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }});
-  },{threshold:.08, rootMargin:'0px 0px -60px 0px'});
-  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-</script>
-
+<script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=69d85207c980b911109c8bdf" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/js/webflow.schunk.36b8fb49256177c8.js" type="text/javascript" crossorigin="anonymous"></script>
+<script src="https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/js/webflow.schunk.403aa9010250dfe4.js" type="text/javascript" crossorigin="anonymous"></script>
+<script src="https://cdn.prod.website-files.com/69d85207c980b911109c8bdf/js/webflow.91a0b523.87282558ec0c543d.js" type="text/javascript" crossorigin="anonymous"></script>
+<script src="https://cdn.prod.website-files.com/gsap/3.15.0/gsap.min.js" type="text/javascript"></script>
+<script src="https://cdn.prod.website-files.com/gsap/3.15.0/SplitText.min.js" type="text/javascript"></script>
+<script src="https://cdn.prod.website-files.com/gsap/3.15.0/ScrollTrigger.min.js" type="text/javascript"></script>
 </body>
 </html>
