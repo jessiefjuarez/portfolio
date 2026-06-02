@@ -218,6 +218,38 @@ body {
   transition: opacity 0.22s ease;
 }
 .navbar_logo-link:hover { opacity: 0.5; }
+
+/* ── Text scale on hover ───────────────────────────────── */
+
+/* hero social links */
+.hero_link .text-xs {
+  display: inline-block;
+  transform-origin: left center;
+  transition: transform 0.35s cubic-bezier(0.23,1,0.32,1);
+}
+.hero_link:hover .text-xs {
+  transform: scale(1.18);
+}
+
+/* nav logo */
+.navbar_logo-link .text-xs {
+  display: inline-block;
+  transform-origin: left center;
+  transition: transform 0.35s cubic-bezier(0.23,1,0.32,1);
+}
+.navbar_logo-link:hover .text-xs {
+  transform: scale(1.12);
+}
+
+/* footer nav links */
+.nav_links .text-xs.is-1 {
+  display: inline-block;
+  transform-origin: left center;
+  transition: transform 0.35s cubic-bezier(0.23,1,0.32,1);
+}
+.nav_links:hover .text-xs.is-1 {
+  transform: scale(1.14);
+}
 </style>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"/>
