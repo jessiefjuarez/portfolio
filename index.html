@@ -178,10 +178,11 @@ body {
 }
 
 .carousel-container {
-  width: 100vw;
+  width: 100vw !important;
+  max-width: none !important;
+  overflow: visible !important;
   margin-left: calc(-1 * (100vw - 100%) / 2);
-  display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   -webkit-mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);
   mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);
 }
