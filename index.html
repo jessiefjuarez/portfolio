@@ -175,9 +175,12 @@ body {
 /* ── Hero link hover ───────────────────────────────────── */
 
 /* dim siblings while one is hovered */
-.hero_links:hover .hero_link { opacity: 0.38; transition: opacity 0.3s ease; }
-.hero_links:hover .hero_link:hover { opacity: 1; }
-.hero_link { transition: opacity 0.3s ease; }
+.hero_links:hover .hero_link { opacity: 0.38; }
+.hero_links:hover .hero_link:hover { opacity: 1; transform: scale(1.15); }
+.hero_link {
+  transition: opacity 0.3s ease, transform 0.35s cubic-bezier(0.23,1,0.32,1);
+  transform-origin: left center;
+}
 
 /* arrow container clips the swap */
 .hero_link-arrow {
@@ -220,16 +223,6 @@ body {
 .navbar_logo-link:hover { opacity: 0.5; }
 
 /* ── Text scale on hover ───────────────────────────────── */
-
-/* hero social links */
-.hero_link .text-xs {
-  display: inline-block;
-  transform-origin: left center;
-  transition: transform 0.35s cubic-bezier(0.23,1,0.32,1);
-}
-.hero_link:hover .text-xs {
-  transform: scale(1.18);
-}
 
 /* nav logo */
 .navbar_logo-link .text-xs {
