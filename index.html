@@ -171,6 +171,53 @@ body {
 }
 
 #jj-lb-close:hover { color: rgba(245, 240, 230, 0.95); }
+
+/* ── Hero link hover ───────────────────────────────────── */
+
+/* dim siblings while one is hovered */
+.hero_links:hover .hero_link { opacity: 0.38; transition: opacity 0.3s ease; }
+.hero_links:hover .hero_link:hover { opacity: 1; }
+.hero_link { transition: opacity 0.3s ease; }
+
+/* arrow container clips the swap */
+.hero_link-arrow {
+  position: relative;
+  overflow: hidden;
+}
+
+/* outgoing arrow */
+.hero_link .icon-1x1-small.is-1 {
+  transition: transform 0.4s cubic-bezier(0.23,1,0.32,1),
+              opacity   0.28s ease;
+  will-change: transform, opacity;
+}
+
+/* incoming arrow — starts bottom-left, hidden */
+.hero_link .icon-1x1-small.is-2 {
+  position: absolute;
+  inset: 0;
+  transform: translate(-50%, 50%);
+  opacity: 0;
+  transition: transform 0.4s cubic-bezier(0.23,1,0.32,1),
+              opacity   0.28s ease;
+  will-change: transform, opacity;
+}
+
+/* on hover: is-1 exits top-right, is-2 enters center */
+.hero_link:hover .icon-1x1-small.is-1 {
+  transform: translate(50%, -50%);
+  opacity: 0;
+}
+.hero_link:hover .icon-1x1-small.is-2 {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+/* ── Nav logo hover ────────────────────────────────────── */
+.navbar_logo-link {
+  transition: opacity 0.22s ease;
+}
+.navbar_logo-link:hover { opacity: 0.5; }
 </style>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"/>
