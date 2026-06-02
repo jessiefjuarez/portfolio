@@ -721,5 +721,107 @@ body {
   });
 })();
 </script>
+
+<script>
+(function () {
+  gsap.registerPlugin(ScrollTrigger, SplitText);
+
+  function init() {
+    // ── Word-by-word reveals (eyebrow labels) ─────────────
+    document.querySelectorAll('[animation="word-by-word"]').forEach(function (el) {
+      var split = new SplitText(el, { type: 'words' });
+      gsap.from(split.words, {
+        opacity: 0,
+        y: '0.5em',
+        duration: 0.7,
+        stagger: 0.07,
+        ease: 'power3.out',
+        scrollTrigger: { trigger: el, start: 'top 88%' }
+      });
+    });
+
+    // ── Line-by-line reveals (bio + footer headline) ──────
+    document.querySelectorAll('[animation="line-by-line"]').forEach(function (el) {
+      var split = new SplitText(el, { type: 'lines' });
+      gsap.from(split.lines, {
+        opacity: 0,
+        y: '0.7em',
+        duration: 1.0,
+        stagger: 0.1,
+        ease: 'power3.out',
+        scrollTrigger: { trigger: el, start: 'top 88%' }
+      });
+    });
+
+    // ── Collection cards — fade + rise on entry ───────────
+    document.querySelectorAll('.collection_card').forEach(function (card) {
+      gsap.from(card, {
+        opacity: 0,
+        y: 70,
+        duration: 1.0,
+        ease: 'power3.out',
+        scrollTrigger: { trigger: card, start: 'top 88%' }
+      });
+    });
+
+    // ── Clients heading ───────────────────────────────────
+    var clientsHeading = document.querySelector('.clients .heading');
+    if (clientsHeading) {
+      gsap.from(clientsHeading, {
+        opacity: 0,
+        y: 28,
+        duration: 0.8,
+        ease: 'power3.out',
+        scrollTrigger: { trigger: clientsHeading, start: 'top 88%' }
+      });
+    }
+
+    // ── About portraits — staggered fade up ───────────────
+    var portraits = document.querySelectorAll('.testimonials_img img');
+    if (portraits.length) {
+      gsap.from(portraits, {
+        opacity: 0,
+        y: 50,
+        duration: 1.0,
+        stagger: 0.18,
+        ease: 'power3.out',
+        scrollTrigger: { trigger: '.testimonials_img', start: 'top 85%' }
+      });
+    }
+
+    // ── Footer links — staggered fade up ──────────────────
+    var footerLinks = document.querySelectorAll('.footer_links .nav_links');
+    if (footerLinks.length) {
+      gsap.from(footerLinks, {
+        opacity: 0,
+        y: 24,
+        duration: 0.7,
+        stagger: 0.08,
+        ease: 'power3.out',
+        scrollTrigger: { trigger: '.footer_links', start: 'top 88%' }
+      });
+    }
+
+    // ── Footer statement ──────────────────────────────────
+    var footerContent = document.querySelector('.footer_content');
+    if (footerContent) {
+      gsap.from(footerContent, {
+        opacity: 0,
+        y: 40,
+        duration: 1.0,
+        ease: 'power3.out',
+        scrollTrigger: { trigger: footerContent, start: 'top 88%' }
+      });
+    }
+  }
+
+  // Wait for fonts to load so SplitText measures correctly
+  if (document.readyState === 'complete') {
+    init();
+  } else {
+    window.addEventListener('load', init);
+  }
+})();
+</script>
 </body>
 </html>
