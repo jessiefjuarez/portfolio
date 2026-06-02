@@ -178,6 +178,12 @@ body {
   row-gap: 0 !important;
 }
 
+/* ── Force cards always visible (block Webflow fade-in) ── */
+.collection_card {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
 /* ── Logo carousel edge feather ───────────────────────── */
 .clients {
   overflow-x: clip;
@@ -804,11 +810,23 @@ body {
     }
   }
 
+  // Kill any Webflow/GSAP animations on collection cards so they stay visible
+  function clearCardAnimations() {
+    document.querySelectorAll('.collection_card').forEach(function (card) {
+      gsap.killTweensOf(card);
+      gsap.set(card, { clearProps: 'opacity,visibility,transform' });
+    });
+  }
+
   // Wait for fonts to load so SplitText measures correctly
   if (document.readyState === 'complete') {
+    clearCardAnimations();
     init();
   } else {
-    window.addEventListener('load', init);
+    window.addEventListener('load', function () {
+      clearCardAnimations();
+      init();
+    });
   }
 })();
 </script>
