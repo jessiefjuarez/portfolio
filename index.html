@@ -176,11 +176,8 @@ body {
 
 /* dim siblings while one is hovered */
 .hero_links:hover .hero_link { opacity: 0.38; }
-.hero_links:hover .hero_link:hover { opacity: 1; transform: scale(1.15); }
-.hero_link {
-  transition: opacity 0.3s ease, transform 0.35s cubic-bezier(0.23,1,0.32,1);
-  transform-origin: left center;
-}
+.hero_links:hover .hero_link:hover { opacity: 1; }
+.hero_link { transition: opacity 0.3s ease; }
 
 /* arrow container clips the swap */
 .hero_link-arrow {
@@ -629,6 +626,28 @@ body {
   closeBtn.addEventListener('click', closeLightbox);
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && lightbox.classList.contains('is-open')) closeLightbox();
+  });
+})();
+</script>
+
+<script>
+(function () {
+  // Webflow's background video has overflow:hidden which clips CSS transforms.
+  // Fix it on the video wrapper so hero links can visually scale out of bounds.
+  var videoWrap = document.querySelector('.w-background-video');
+  if (videoWrap) videoWrap.style.overflow = 'visible';
+
+  document.querySelectorAll('.hero_link').forEach(function (el) {
+    el.style.transformOrigin = 'left center';
+    el.style.transition = 'opacity 0.3s ease, transform 0.38s cubic-bezier(0.23,1,0.32,1)';
+    el.style.willChange = 'transform';
+
+    el.addEventListener('mouseenter', function () {
+      el.style.transform = 'scale(1.2)';
+    });
+    el.addEventListener('mouseleave', function () {
+      el.style.transform = '';
+    });
   });
 })();
 </script>
