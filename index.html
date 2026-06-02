@@ -753,17 +753,6 @@ body {
       });
     });
 
-    // ── Collection cards — fade + rise on entry ───────────
-    document.querySelectorAll('.collection_card').forEach(function (card) {
-      gsap.from(card, {
-        opacity: 0,
-        y: 70,
-        duration: 1.0,
-        ease: 'power3.out',
-        scrollTrigger: { trigger: card, start: 'top 88%' }
-      });
-    });
-
     // ── Clients heading ───────────────────────────────────
     var clientsHeading = document.querySelector('.clients .heading');
     if (clientsHeading) {
