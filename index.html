@@ -666,5 +666,54 @@ body {
   });
 })();
 </script>
+
+<script>
+(function () {
+  window.addEventListener('load', function () {
+    var carousel = document.querySelector('.carousel-container');
+    if (!carousel) return;
+
+    var c1 = carousel.querySelectorAll('.logo-container')[0];
+    var c2 = carousel.querySelectorAll('.logo-container')[1];
+    if (!c1 || !c2) return;
+
+    // Take over from Webflow/GSAP
+    if (window.gsap) {
+      gsap.killTweensOf(c1);
+      gsap.killTweensOf(c2);
+    }
+
+    [c1, c2].forEach(function (c) {
+      c.style.animation   = 'none';
+      c.style.flexShrink  = '0';
+      c.style.willChange  = 'transform';
+    });
+
+    var baseSpeed   = 0.5;  // px per frame at rest
+    var fastSpeed   = 2.2;  // px per frame on hover
+    var targetSpeed = baseSpeed;
+    var speed       = baseSpeed;
+    var offset      = 0;
+
+    function tick() {
+      speed  += (targetSpeed - speed) * 0.06;  // ease speed transitions
+      offset += speed;
+
+      var w = c1.offsetWidth;
+      if (w > 0 && offset >= w) offset -= w;
+
+      c1.style.transform = 'translateX(' + (-offset) + 'px)';
+      c2.style.transform = 'translateX(' + (-offset) + 'px)';
+
+      requestAnimationFrame(tick);
+    }
+
+    carousel.addEventListener('mouseenter', function () { targetSpeed = fastSpeed; });
+    carousel.addEventListener('mouseleave', function () { targetSpeed = baseSpeed; });
+
+    tick();
+  });
+})();
+</script>
 </body>
 </html>
