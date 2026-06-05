@@ -267,6 +267,35 @@ body {
 .nav_links:hover .text-xs.is-1 {
   transform: scale(1.14);
 }
+
+/* ── Mobile optimizations ─────────────────────────────── */
+@media screen and (max-width: 767px) {
+
+  /* Skip video on mobile — poster image shows instead */
+  #jj-hero-video { display: none; }
+
+  /* Stack 4-card work grid to single column */
+  .collections_wrap {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+  .collection_card { width: 100% !important; }
+
+  /* Stack about section: portraits above bio */
+  .testimonial_slider {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  /* Prevent footer headline overflow */
+  .footer_content.is-46rem { max-width: 100% !important; }
+
+  /* Scale carousel logos down */
+  .logo-image {
+    max-width: 120px !important;
+    height: auto;
+  }
+}
 </style>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"/>
