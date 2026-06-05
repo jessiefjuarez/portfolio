@@ -290,10 +290,12 @@ body {
   /* Prevent footer headline overflow */
   .footer_content.is-46rem { max-width: 100% !important; }
 
-  /* Scale carousel logos down */
+  /* Fix carousel logo compression on mobile */
   .logo-image {
-    max-width: 120px !important;
-    height: auto;
+    flex-shrink: 0 !important;  /* stop flex from squishing logos */
+    height: 36px !important;    /* consistent height across all logos */
+    width: auto !important;     /* let each logo scale to its own aspect ratio */
+    object-fit: contain;
   }
 }
 </style>
