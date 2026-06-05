@@ -44,7 +44,10 @@ body {
 .spacer * { padding: 0 }
 
 /* ── Custom Cursor ─────────────────────────────────────── */
+#jj-cursor-dot, #jj-cursor-ring { display: none; }
 @media (hover: hover) and (pointer: fine) {
+  #jj-cursor-dot  { display: block; }
+  #jj-cursor-ring { display: flex; }
   * { cursor: none !important; }
 
   #jj-cursor-dot {
